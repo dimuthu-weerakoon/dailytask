@@ -22,6 +22,7 @@ return view('tasks.tasks')->with('tasks',$data);
 
 });
 
+//Task Controller 
 Route::post('/savetask', 'TasksController@store');
 
 Route::get('/deltask/{id}', 'TasksController@delete');
